@@ -4,6 +4,11 @@ A tool that enumerates resources linked to AWS Elastic Beanstalk deployments, fe
 
 ## Blog post [here][0].
 
+## Usage
+```
+python3 beanstalk_reporter.py --profile <aws_cli_profile_name> --env <beanstalk_env_name>
+```
+
 ## Demo:
 ![DemoGIF][1]
 
