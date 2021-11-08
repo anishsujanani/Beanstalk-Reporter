@@ -5,7 +5,7 @@ A tool that enumerates resources linked to AWS Elastic Beanstalk deployments, fe
 ## Blog post [here][0].
 
 ## Demo:
-![DemoGIF](https://github.com/anishsujanani/Beanstalk-Reporter/opgif.gif)
+![DemoGIF][1]
 
 
 ## Sample output:
@@ -178,3 +178,4 @@ A tool that enumerates resources linked to AWS Elastic Beanstalk deployments, fe
 ```
 
 [0]: https://anishsujanani.me/blog/
+[1]: https://github.com/anishsujanani/Beanstalk-Reporter/blob/master/opgif.gif
