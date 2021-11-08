@@ -2,7 +2,7 @@
 
 A tool that enumerates resources linked to AWS Elastic Beanstalk deployments, fetches security-oriented configuration details for load balancers, auto-scaling groups, instances, network interfaces and security groups and pretty-prints to standard output.
 
-## Blog post [here][0].
+**Blog post [here][0].**
 
 ## Usage
 ```
@@ -182,5 +182,5 @@ python3 beanstalk_reporter.py --profile <aws_cli_profile_name> --env <beanstalk_
 }
 ```
 
-[0]: https://anishsujanani.me/blog/
+[0]: https://www.anishsujanani.me/2021/11/08/beanstalk-reporter.html
 [1]: https://github.com/anishsujanani/Beanstalk-Reporter/blob/master/opgif.gif
