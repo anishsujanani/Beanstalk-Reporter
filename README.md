@@ -1,6 +1,6 @@
 # Beanstalk-Reporter
 
-Security control auditing on Beanstalk deployments involves the cumbersome proces of manually going through deployment linked resources via the AWS console or CLI, filtering via ARN/ID and having to parse through multiple UI flows and highly verbose API responses respectively (not all of which may be relevant to security engineers) in order to verify configuration.
+Security control auditing on Beanstalk deployments involves the cumbersome process of manually going through deployment-linked resources via the AWS console or CLI, filtering via ARN/ID and having to parse through multiple UI flows and highly verbose API responses respectively (not all of which may be relevant to security engineers) in order to verify configuration.
 
 This tool is written with the intent of simplifying that process. It enumerates resources linked to AWS Elastic Beanstalk deployments including:
 - Load Balancers
