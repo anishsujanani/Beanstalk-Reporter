@@ -1,8 +1,15 @@
 # Beanstalk-Reporter
 
-A tool that enumerates resources linked to AWS Elastic Beanstalk deployments, fetches security-oriented configuration details for load balancers, auto-scaling groups, instances, network interfaces and security groups and pretty-prints to standard output.
+Security control auditing on Beanstalk deployments involves the cumbersome proces of manually going through deployment linked resources via the AWS console or CLI, filtering via ARN/ID and having to parse through multiple UI flows and highly verbose API responses respectively (not all of which may be relevant to security engineers) in order to verify configuration.
 
-**Blog post [here][0].**
+This tool is written with the intent of simplifying that process. It enumerates resources linked to AWS Elastic Beanstalk deployments including:
+- Load Balancers
+- Autoscaling Groups
+- EC2 instances
+
+It then fetches configuration items for each of the above and filters in information relevant to security controls in a standardized JSON structure. 
+
+You may refer to **[this blog post][0]** for a bit more depth.
 
 ## Usage
 ```
@@ -14,6 +21,7 @@ python3 beanstalk_reporter.py --profile <aws_cli_profile_name> --env <beanstalk_
 
 
 ## Sample output:
+Security-relevant fields for linked components are presented in the structure below. Responses from APIs such as `ec2:describe_*` and `autoscaling:describe_*` contain a much larger amount of information, which may not neccessarily be in the scope of security monitoring.
 ```
 {
     "LoadBalancers": {
